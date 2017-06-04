@@ -1,0 +1,18 @@
+<% include ../partials/usernavbar %>
+    musings
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Post</th>
+        </tr>
+        <% postAll.forEach(function(post) { %>
+            <tr>
+                <td>
+                    <%= post.title %>
+                </td>
+                <td>
+                    <%= post.postText %>
+                </td>
+            </tr>
+            <% }) %>
+    </table>

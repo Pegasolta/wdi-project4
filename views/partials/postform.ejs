@@ -1,0 +1,15 @@
+<div class="postform">
+  <form action="/holiday-styles/<%= categoryId %>/<%= budgetId %>" method="POST">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input id="postTitle" class="form-control" type="text" name="title">
+    </div>
+
+    <div class="form-group">
+      <label for="postText">Post Text</label>
+      <input id="postText" class="form-control" type="text" name="postText">
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+  </form>
+</div>
